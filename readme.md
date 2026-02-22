@@ -8,6 +8,10 @@
 - **Core Functionality**: Showcase the next-gen processor with immersive visuals, technical breakdowns, and CTAs 🎯
 - **Target Users**: Tech enthusiasts, hardware developers, premium tech consumers 💻⚡
 
+
+## Live Demo 🔗
+- [Coed website](https://vanshdeveloper.github.io/coed/)
+
 ---
 
 ## 2. 🎨 UI/UX Specification
