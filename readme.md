@@ -6,7 +6,6 @@
 - **Project Name**: COED Processor Landing Page
 - **Type**: Single-page marketing website 🌐
 - **Core Functionality**: Showcase the next-gen processor with immersive visuals, technical breakdowns, and CTAs 🎯
-- **Target Users**: Tech enthusiasts, hardware developers, premium tech consumers 💻⚡
 
 
 ## Live Demo 🔗
@@ -117,3 +116,4 @@
 ---
 
 > 💡 **Pro Tip**: This landing page is designed to captivate visitors with stunning visuals and smooth animations! 🚀🌟
+
