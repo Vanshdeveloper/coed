@@ -26,6 +26,7 @@
             <div class="nav-links">
                 <a href="#features">Specs</a>
                 <a href="#breakdown">Architecture</a>
+                <a href="buy.html" class="nav-buy">Buy Now</a>
                 <a href="#preorder" class="nav-cta">Pre-Order</a>
             </div>
             <div class="mobile-menu-btn">
@@ -41,6 +42,7 @@
         <div class="mobile-menu-content">
             <a href="#features" class="mobile-link">Specs</a>
             <a href="#breakdown" class="mobile-link">Architecture</a>
+            <a href="buy.html" class="mobile-link">Buy</a>
             <a href="#preorder" class="mobile-link mobile-cta">Pre-Order</a>
         </div>
     </div>
@@ -121,16 +123,6 @@
                 <span class="cta-sub">Ships Q2 2050</span>
             </div>
         </div>
-
-        <!-- Enhanced HUD Elements with Data Lines -->
-        <svg class="hud-connections" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <line class="hud-line line-1" x1="15" y1="30" x2="35" y2="45" />
-            <line class="hud-line line-2" x1="85" y1="25" x2="65" y2="45" />
-            <line class="hud-line line-3" x1="20" y1="75" x2="35" y2="55" />
-            <line class="hud-line line-4" x1="80" y1="70" x2="65" y2="55" />
-            <line class="hud-line line-5" x1="25" y1="50" x2="40" y2="48" />
-            <line class="hud-line line-6" x1="75" y1="45" x2="60" y2="47" />
-        </svg>
 
         <div class="hud-element hud-1">
             <div class="hud-pulse"></div>
@@ -362,7 +354,7 @@
                     <span class="price-value">$4,999</span>
                 </div>
 
-                <a href="#" class="cta-button cta-large">Reserve Your Unit</a>
+                <a href="#" class="cta-button cta-large" id="reserve-btn">Reserve Your Unit</a>
 
                 <div class="guarantee">
                     <span>✓ Ships Q2 2050</span>
@@ -382,11 +374,73 @@
                     <a href="#">Privacy</a>
                     <a href="#">Terms</a>
                     <a href="#">Contact</a>
+                    <a href="https://vanshdeveloper.github.io/coed" target="_blank">Github</a>
                 </div>
                 <p class="footer-copy">© 2050 COED Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Reservation Modal -->
+    <div class="reservation-modal" id="reservation-modal">
+        <div class="reservation-overlay"></div>
+        <div class="reservation-content">
+            <button class="reservation-close" id="reservation-close">&times;</button>
+            <div class="reservation-header">
+                <h2 class="reservation-title">RESERVE YOUR UNIT</h2>
+                <p class="reservation-subtitle">Join the quantum revolution</p>
+            </div>
+            <form class="reservation-form" id="reservation-form">
+                <div class="form-group">
+                    <label for="reserve-name">FULL NAME</label>
+                    <input type="text" id="reserve-name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="reserve-email">EMAIL ADDRESS</label>
+                    <input type="email" id="reserve-email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="reserve-product">SELECT PROCESSOR</label>
+                    <select id="reserve-product" name="product" required>
+                        <option value="">Choose your model</option>
+                        <option value="x1">COED X1 - $2,499</option>
+                        <option value="light">COED LIGHT - $1,799</option>
+                        <option value="elite">COED ELITE - $3,499</option>
+                        <option value="quantum">COED QUANTUM - $7,999</option>
+                        <option value="neural">COED NEURAL - $12,499</option>
+                    </select>
+                </div>
+                <button type="submit" class="reserve-submit-btn">
+                    <span class="btn-text">CONFIRM RESERVATION</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Reservation Success Modal -->
+    <div class="reservation-success" id="reservation-success">
+        <div class="reservation-overlay"></div>
+        <div class="reservation-content success-content">
+            <div class="success-icon">
+                <div class="success-ring"></div>
+                <div class="success-ring delay-1"></div>
+                <div class="success-ring delay-2"></div>
+                <span class="success-check">✓</span>
+            </div>
+            <h2 class="success-title">RESERVATION CONFIRMED</h2>
+            <p class="success-message">Welcome to the future. We'll contact you when your COED processor is ready.</p>
+            <div class="success-details" id="success-details"></div>
+            <button class="reserve-submit-btn" id="success-close-btn">
+                <span class="btn-text">DONE</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message">Added to cart!</span>
+    </div>
 
 </body>
 <script src="script.js"></script>

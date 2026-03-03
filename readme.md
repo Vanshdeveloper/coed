@@ -4,12 +4,17 @@
 
 ## 1. 📋 Project Overview
 - **Project Name**: COED Processor Landing Page
-- **Type**: Single-page marketing website 🌐
-- **Core Functionality**: Showcase the next-gen processor with immersive visuals, technical breakdowns, and CTAs 🎯
-
+- **Type**: Multi-page marketing website with e-commerce functionality 🛒
+- **Core Functionality**: Showcase the next-gen processor with immersive visuals, technical breakdowns, product catalog, and shopping cart 🛍️
 
 ## Live Demo 🔗
 - [Coed website](https://vanshdeveloper.github.io/coed/)
+
+## Pages 📄
+| Page | Description |
+|------|-------------|
+| 🏠 **index.html** | Landing page with hero, features, and architecture breakdown |
+| 🛒 **buy.html** | Product catalog with 5 processor models and shopping cart |
 
 ---
 
@@ -104,6 +109,10 @@
 3. Energy pulse animation on processor image ⚡🎬
 4. Hover effects on cards 🃏✨
 5. Responsive layout switching 📱🔄🖥️
+6. Add to cart functionality 🛒
+7. Cart quantity management ➕➖
+8. Persistent cart storage (localStorage) 💾
+9. Toast notifications for user feedback 🔔
 
 ### 🎬 Animations
 | Animation | Description | Duration |
@@ -115,5 +124,36 @@
 
 ---
 
-> 💡 **Pro Tip**: This landing page is designed to captivate visitors with stunning visuals and smooth animations! 🚀🌟
+## 4. 🛒 Products Catalog
+
+### Available Processors
+
+| Model | Category | Neural Cores | Processing Cores | Clock Speed | Memory Bandwidth | TDP | Price |
+|-------|----------|--------------|------------------|-------------|------------------|-----|-------|
+| 🟣 **COED X1** | Entry Level | 64 TOPS | 128 Hybrid | 8.5 THz | 1.8 TB/s | 650W | $2,499 |
+| 🟣 **COED ELITE** | High Performance | 96 TOPS | 192 Hybrid | 10.2 THz | 2.1 TB/s | 750W | $3,499 |
+| 🟢 **COED LIGHT** | Energy Efficient | 48 TOPS | 96 Hybrid | 6.4 THz | 1.2 TB/s | 280W | $1,799 |
+| 🟡 **COED QUANTUM** | Quantum Ready | 160 TOPS | 320 Hybrid | 15.6 THz | 3.2 TB/s | 1,200W | $7,999 |
+| 🔴 **COED NEURAL** | AI Supremacy | 256 TOPS | 512 Hybrid | 18.2 THz | 4.8 TB/s | 1,500W | $12,499 |
+
+---
+
+## 5. 🛍️ Shopping Cart Features
+
+### Cart Functionality
+- **Add to Cart**: One-click add to cart from product cards 🛒
+- **Quantity Management**: Increase/decrease item quantities ➕➖
+- **Remove Items**: Remove products from cart 🗑️
+- **Clear Cart**: Remove all items at once 🗑️🛒
+- **Persistent Storage**: Cart data saved to localStorage 💾
+
+### Cart Display
+- **Cart Count**: Real-time item count in navigation 🔢
+- **Cart Summary**: Subtotal, shipping, and total calculations 💰
+- **Free Shipping**: Automatic free shipping on all orders 🚚
+- **Toast Notifications**: Feedback on cart actions 🔔
+
+---
+
+> 💡 **Pro Tip**: This landing page is designed to captivate visitors with stunning visuals and smooth animations! Visit the buy page to explore our range of processors and experience the full e-commerce functionality! 🚀🌟
 

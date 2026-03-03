@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COED | Buy Processors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background -->
+    <div class="plasma-bg">
+        <div class="circuit-pattern"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">COED</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#products" class="active">Buy</a>
+                <a href="#cart" class="nav-cta" id="cart-link">
+                    Cart <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="#products" class="mobile-link">Buy</a>
+            <a href="#cart" class="mobile-link mobile-cta" id="mobile-cart-link">Cart (<span class="cart-count">0</span>)</a>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="buy-section">
+        <div class="container">
+            <h2 class="section-title">SELECT YOUR<br>PROCESSOR</h2>
+            <p class="section-subtitle">Choose from our range of next-generation processors</p>
+
+            <div class="products-grid">
+                <!-- COED X1 -->
+                <div class="product-card" data-product="x1">
+                    <div class="card-glow"></div>
+                    <div class="product-visual">
+                        <div class="processor-mini">
+                            <div class="chip-core-mini"></div>
+                            <div class="chip-body-mini"></div>
+                        </div>
+                        <div class="product-rings">
+                            <div class="ring-mini r1"></div>
+                            <div class="ring-mini r2"></div>
+                            <div class="ring-mini r3"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge">ENTRY LEVEL</div>
+                        <h3 class="product-name">COED X1</h3>
+                        <div class="product-specs">
+                            <div class="spec-row">
+                                <span>Neural Cores</span>
+                                <span class="spec-val">64 TOPS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Processing Cores</span>
+                                <span class="spec-val">128 Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Clock Speed</span>
+                                <span class="spec-val">8.5 THz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Memory Bandwidth</span>
+                                <span class="spec-val">1.8 TB/s</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>TDP</span>
+                                <span class="spec-val">650W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-label-mini">Starting at</span>
+                            <span class="price-amount">$2,499</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="addToCart('x1')">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COED ELITE -->
+                <div class="product-card" data-product="elite">
+                    <div class="card-glow"></div>
+                    <div class="product-visual">
+                        <div class="processor-mini elite">
+                            <div class="chip-core-mini"></div>
+                            <div class="chip-body-mini"></div>
+                        </div>
+                        <div class="product-rings">
+                            <div class="ring-mini r1"></div>
+                            <div class="ring-mini r2"></div>
+                            <div class="ring-mini r3"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge elite-badge">HIGH PERFORMANCE</div>
+                        <h3 class="product-name">COED ELITE</h3>
+                        <div class="product-specs">
+                            <div class="spec-row">
+                                <span>Neural Cores</span>
+                                <span class="spec-val">96 TOPS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Processing Cores</span>
+                                <span class="spec-val">192 Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Clock Speed</span>
+                                <span class="spec-val">10.2 THz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Memory Bandwidth</span>
+                                <span class="spec-val">2.1 TB/s</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>TDP</span>
+                                <span class="spec-val">750W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-label-mini">Starting at</span>
+                            <span class="price-amount">$3,499</span>
+                        </div>
+                        <button class="add-to-cart-btn elite-btn" onclick="addToCart('elite')">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COED LIGHT -->
+                <div class="product-card" data-product="light">
+                    <div class="card-glow"></div>
+                    <div class="product-visual">
+                        <div class="processor-mini light">
+                            <div class="chip-core-mini"></div>
+                            <div class="chip-body-mini"></div>
+                        </div>
+                        <div class="product-rings">
+                            <div class="ring-mini r1"></div>
+                            <div class="ring-mini r2"></div>
+                            <div class="ring-mini r3"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge light-badge">ENERGY EFFICIENT</div>
+                        <h3 class="product-name">COED LIGHT</h3>
+                        <div class="product-specs">
+                            <div class="spec-row">
+                                <span>Neural Cores</span>
+                                <span class="spec-val">48 TOPS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Processing Cores</span>
+                                <span class="spec-val">96 Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Clock Speed</span>
+                                <span class="spec-val">6.4 THz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Memory Bandwidth</span>
+                                <span class="spec-val">1.2 TB/s</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>TDP</span>
+                                <span class="spec-val">280W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-label-mini">Starting at</span>
+                            <span class="price-amount">$1,799</span>
+                        </div>
+                        <button class="add-to-cart-btn light-btn" onclick="addToCart('light')">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COED QUANTUM -->
+                <div class="product-card" data-product="quantum">
+                    <div class="card-glow"></div>
+                    <div class="product-visual">
+                        <div class="processor-mini quantum">
+                            <div class="chip-core-mini"></div>
+                            <div class="chip-body-mini"></div>
+                        </div>
+                        <div class="product-rings">
+                            <div class="ring-mini r1"></div>
+                            <div class="ring-mini r2"></div>
+                            <div class="ring-mini r3"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge quantum-badge">QUANTUM READY</div>
+                        <h3 class="product-name">COED QUANTUM</h3>
+                        <div class="product-specs">
+                            <div class="spec-row">
+                                <span>Neural Cores</span>
+                                <span class="spec-val">160 TOPS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Processing Cores</span>
+                                <span class="spec-val">320 Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Clock Speed</span>
+                                <span class="spec-val">15.6 THz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Memory Bandwidth</span>
+                                <span class="spec-val">3.2 TB/s</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>TDP</span>
+                                <span class="spec-val">1200W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-label-mini">Starting at</span>
+                            <span class="price-amount">$7,999</span>
+                        </div>
+                        <button class="add-to-cart-btn quantum-btn" onclick="addToCart('quantum')">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COED NEURAL -->
+                <div class="product-card" data-product="neural">
+                    <div class="card-glow"></div>
+                    <div class="product-visual">
+                        <div class="processor-mini neural">
+                            <div class="chip-core-mini"></div>
+                            <div class="chip-body-mini"></div>
+                        </div>
+                        <div class="product-rings">
+                            <div class="ring-mini r1"></div>
+                            <div class="ring-mini r2"></div>
+                            <div class="ring-mini r3"></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge neural-badge">AI SUPREMACY</div>
+                        <h3 class="product-name">COED NEURAL</h3>
+                        <div class="product-specs">
+                            <div class="spec-row">
+                                <span>Neural Cores</span>
+                                <span class="spec-val">256 TOPS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Processing Cores</span>
+                                <span class="spec-val">512 Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Clock Speed</span>
+                                <span class="spec-val">18.2 THz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>Memory Bandwidth</span>
+                                <span class="spec-val">4.8 TB/s</span>
+                            </div>
+                            <div class="spec-row">
+                                <span>TDP</span>
+                                <span class="spec-val">1500W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-label-mini">Starting at</span>
+                            <span class="price-amount">$12,499</span>
+                        </div>
+                        <button class="add-to-cart-btn neural-btn" onclick="addToCart('neural')">
+                            <span class="btn-text">Add to Cart</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <div class="container">
+            <h2 class="section-title">YOUR<br>CART</h2>
+            
+            <div class="cart-container">
+                <div class="cart-items" id="cart-items">
+                    <div class="cart-empty">
+                        <div class="empty-icon">🛒</div>
+                        <p>Your cart is empty</p>
+                        <span>Add processors to get started</span>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="cart-shipping">FREE</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="cart-total">$0</span>
+                    </div>
+                    <button class="checkout-btn" id="checkout-btn" onclick="checkout()">
+                        <span>Proceed to Checkout</span>
+                    </button>
+                    <button class="clear-cart-btn" onclick="clearCart()">
+                        <span>Clear Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">COED</div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                    <a href="https://vanshdeveloper.github.io/coed" target="_blank">Github</a>
+                </div>
+                <p class="footer-copy">© 2050 COED Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-message">Added to cart!</span>
+    </div>
+
+    <!-- Quantum Thanks Modal -->
+    <div class="quantum-modal" id="quantum-modal">
+        <div class="quantum-modal-overlay"></div>
+        <div class="quantum-modal-content">
+            <div class="modal-glow"></div>
+            <div class="modal-text">
+                <h2 class="modal-title">Thank You</h2>
+                <p class="modal-message">Your order is in quantum superposition</p>
+                <div class="quantum-states">
+                    <span class="state">Processing</span>
+                    <span class="state">Confirmed</span>
+                </div>
+                <button class="modal-close-btn" onclick="closeQuantumModal()">Continue</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
